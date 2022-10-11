@@ -28,7 +28,7 @@ public class Main {
                     System.out.println("Välj mellan Greta, Karin eller Kevin");
                 }
             }
-               // Här har vi en fin while-loop 
+               // Här har vi en fin while-loop
 
         }
 
