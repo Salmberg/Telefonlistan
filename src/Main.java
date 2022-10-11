@@ -16,9 +16,9 @@ public class Main {
 
             System.out.println("Vems nummer vill du veta? (Greta, Karin eller Kevin):");
 
-            Scanner chooseName = new Scanner(System.in);
+            Scanner choosenName = new Scanner(System.in);
 
-            String input = chooseName.nextLine();
+            String input = choosenName.nextLine();
 
             switch (input) {
                 case "Greta" -> System.out.println(encryptions.get("Greta"));
