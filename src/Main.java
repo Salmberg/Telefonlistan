@@ -16,9 +16,9 @@ public class Main {
 
             System.out.println("Vems nummer vill du veta? (Greta, Karin eller Kevin):");
 
-            Scanner choosenName = new Scanner(System.in);
+            Scanner chooseName = new Scanner(System.in);
 
-            String input = choosenName.nextLine();
+            String input = chooseName.nextLine();
 
             switch (input) {
                 case "Greta" -> System.out.println(encryptions.get("Greta"));
@@ -28,7 +28,7 @@ public class Main {
                     System.out.println("Välj mellan Greta, Karin eller Kevin");
                 }
             }
-
+               // Här har vi en fin while-loop 
 
         }
 
