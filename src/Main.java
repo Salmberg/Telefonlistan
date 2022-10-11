@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,14 +11,27 @@ public class Main {
         encryptions.put("Karin", " 634 2341 2344");
         encryptions.put("Kevin", "324 5430 1222");
 
+        System.out.println("Vems nummer vill du veta? (Greta, Karin eller Kevin):");
 
-        // Read operation
-        System.out.println(encryptions.get("Greta"));
+        Scanner chooseName = new Scanner(System.in);
 
-        for(String key : encryptions.keySet()) {
-            System.out.println("Key: " + key);
-            System.out.println("Value: " + encryptions.get(key));
+        String input = chooseName.nextLine();
+
+
+        if (input.equals("Greta")) {
+            System.out.println(encryptions.get("Greta"));
+        }
+        else if (input.equals("Karin")) {
+            System.out.println(encryptions.get("Karin"));
+}
+        else if (input.equals("Kevin")) {
+            System.out.println(encryptions.get("Kevin"));
+}
+        else {
+            System.out.println("Välj mellan Greta, Karin eller Kevin");
+        }
+
+
         }
 
     }
-}
