@@ -11,10 +11,8 @@ public class Main {
         encryptions.put("Karin", " 634 2341 2344");
         encryptions.put("Kevin", "324 5430 1222");
 
-        boolean running = true;
 
-
-        while (running) {
+        while (true) {
 
             System.out.println("Vems nummer vill du veta? (Greta, Karin eller Kevin):");
 
