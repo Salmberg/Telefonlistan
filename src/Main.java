@@ -11,27 +11,28 @@ public class Main {
         encryptions.put("Karin", " 634 2341 2344");
         encryptions.put("Kevin", "324 5430 1222");
 
-        System.out.println("Vems nummer vill du veta? (Greta, Karin eller Kevin):");
-
-        Scanner chooseName = new Scanner(System.in);
-
-        String input = chooseName.nextLine();
+        boolean running = true;
 
 
-        if (input.equals("Greta")) {
-            System.out.println(encryptions.get("Greta"));
-        }
-        else if (input.equals("Karin")) {
-            System.out.println(encryptions.get("Karin"));
-}
-        else if (input.equals("Kevin")) {
-            System.out.println(encryptions.get("Kevin"));
-}
-        else {
-            System.out.println("Välj mellan Greta, Karin eller Kevin");
-        }
+        while (running) {
+
+            System.out.println("Vems nummer vill du veta? (Greta, Karin eller Kevin):");
+
+            Scanner chooseName = new Scanner(System.in);
+
+            String input = chooseName.nextLine();
+
+            switch (input) {
+                case "Greta" -> System.out.println(encryptions.get("Greta"));
+                case "Karin" -> System.out.println(encryptions.get("Karin"));
+                case "Kevin" -> System.out.println(encryptions.get("Kevin"));
+                default -> {
+                    System.out.println("Välj mellan Greta, Karin eller Kevin");
+                }
+            }
 
 
         }
 
     }
+}
